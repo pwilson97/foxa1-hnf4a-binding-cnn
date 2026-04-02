@@ -131,4 +131,4 @@ HNF4A head: Linear(128→32) → ReLU → Dropout → Linear(32→1) → Sigmoid
 
 Data from:
 
-> Hansen AS, Cattoglio C, Darzacq X, Tjian R. A CTD-mediated mechanism coupling transcription factor binding to chromatin remodeling. *eLife*. 2022;11:e76539. doi:10.7554/eLife.76539
+> Hansen JL, Loell KJ, Cohen BA. A test of the pioneer factor hypothesis using ectopic liver gene activation. *eLife*. 2022;11:e73358. doi:10.7554/eLife.73358
