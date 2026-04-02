@@ -1,0 +1,40 @@
+# Data files (too large for git)
+data/genome/*.fa
+data/genome/*.fa.fai
+data/raw/*.narrowPeak
+data/raw/*.bed
+results/sequences/*.fa
+results/fimo/*.tsv
+results/peaks/*.narrowPeak
+results/classified/*.bed
+
+# Model weights and large outputs
+results/deep_learning/**/*.pt
+results/deep_learning/**/*.npz
+results/deep_learning/**/*.h5
+
+# Figures (regenerable)
+figures/*.pdf
+figures/*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
