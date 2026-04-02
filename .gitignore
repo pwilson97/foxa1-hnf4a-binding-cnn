@@ -16,6 +16,7 @@ results/deep_learning/**/*.h5
 # Figures (regenerable)
 figures/*.pdf
 figures/*.png
+!figures/binding_cnn_architecture.png
 
 # Python
 __pycache__/

@@ -114,18 +114,7 @@ python src/dl_run_all.py --skip-modisco  # Skip MoDISco (faster)
 
 ## Model architecture (binding CNN)
 
-```
-Input: (batch, 4, 1001) one-hot encoded DNA
-
-Conv1d(4→64, k=19) → BatchNorm → ReLU → MaxPool(4) → Dropout(0.25)    # 1001→250
-Conv1d(64→128, k=11) → BatchNorm → ReLU → MaxPool(4) → Dropout(0.25)  # 250→62
-Conv1d(128→128, k=7) → BatchNorm → ReLU → MaxPool(4) → Dropout(0.25)  # 62→15
-
-AdaptiveAvgPool1d(1)  # 15→1, output: (batch, 128)
-
-FOXA1 head: Linear(128→32) → ReLU → Dropout → Linear(32→1) → Sigmoid
-HNF4A head: Linear(128→32) → ReLU → Dropout → Linear(32→1) → Sigmoid
-```
+![Multi-Task Binding CNN Architecture](figures/binding_cnn_architecture.png)
 
 ## Citation
 
